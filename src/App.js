@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./App.css";
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
   const [newTaskInput, setNewTaskInput] = useState("");
 
   return (
-    <div>
+    <div className="container">
       <h1>ToDo List</h1>
 
       {tasks.map((task, index) => {
